@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grade 10 Midterm – Units 2 & 3</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#e9eff4;--card:#fff;--ink:#10263a;--mute:#5a6b7b;--line:#d3dde6;--acc:#0f8b8d;--hi:#ffd166;--ok:#1f8a4c;--bad:#c0392b;--okbg:#dff3e7;--badbg:#f9e0dc;--head:#10263a}
+*{box-sizing:border-box}html{scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,Tahoma,sans-serif;line-height:1.8;font-size:17px}
+.en{font-family:"Atkinson Hyperlegible",Verdana,sans-serif;direction:ltr;unicode-bidi:isolate;display:inline-block;text-align:left}
+p.en,div.en{display:block}
+header{background:var(--head);color:#fff;padding:28px 18px 22px}
+header h1{margin:0;font-size:clamp(26px,6vw,44px);font-weight:800;line-height:1.3}
+header p{margin:6px 0 0;color:#b9cddd;max-width:640px}
+header mark{background:var(--hi);color:#10263a;padding:0 8px;border-radius:6px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--head);display:flex;gap:6px;padding:8px 12px;overflow-x:auto;border-top:1px solid #2b4560}
+nav button{flex:1;min-width:max-content;border:0;background:#1d3a54;color:#cfe0ee;padding:9px 16px;border-radius:999px;font:600 15px Cairo,sans-serif;cursor:pointer}
+nav button.on{background:var(--hi);color:#10263a}
+button:focus-visible,summary:focus-visible,textarea:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+main{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;overflow:hidden}
+summary{cursor:pointer;padding:14px 18px;font-weight:800;font-size:18px}
+details[open] summary{background:var(--acc);color:#fff}
+.body{padding:6px 18px 16px}
+.rule{background:var(--bg);border-right:5px solid var(--acc);padding:8px 14px;border-radius:8px;margin:10px 0}
+.ex{background:var(--okbg);border-radius:8px;padding:4px 12px;margin:6px 0}
+.tag{display:inline-block;background:var(--hi);color:#10263a;border-radius:6px;padding:0 8px;font-weight:700;font-size:14px}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:15px}td,th{border:1px solid var(--line);padding:6px 8px;text-align:right}th{background:var(--bg)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.pills button,.btn{border:2px solid var(--acc);background:transparent;color:var(--acc);padding:7px 16px;border-radius:10px;font:700 15px Cairo,sans-serif;cursor:pointer}
+.pills button.on,.btn.fill{background:var(--acc);color:#fff}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0}
+.q>p{margin:0 0 8px;font-weight:700}
+.o{display:block;width:100%;text-align:left;margin:6px 0;padding:9px 14px;border:2px solid var(--line);background:var(--bg);color:var(--ink);border-radius:10px;font-size:16px;cursor:pointer}
+.o:hover{border-color:var(--acc)}.o.pick{border-color:var(--acc);background:var(--card)}
+.o.right{border-color:var(--ok);background:var(--okbg)}.o.wrong{border-color:var(--bad);background:var(--badbg)}
+.why{margin:8px 0 0;padding:8px 12px;border-radius:8px;background:var(--bg);font-size:15px}
+.score{position:sticky;top:calc(58px + env(safe-area-inset-top,0px));background:var(--hi);color:#10263a;border-radius:10px;padding:6px 14px;font-weight:800;display:flex;justify-content:space-between;z-index:3}
+.big{font-size:56px;font-weight:800;line-height:1;color:var(--acc)}
+.bar{height:12px;background:var(--line);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc)}
+.fc{min-height:210px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;cursor:pointer;font-size:28px;font-weight:700;border:2px dashed var(--acc);border-radius:16px;background:var(--card);padding:18px}
+.fc small{font-size:16px;font-weight:400;color:var(--mute)}
+textarea{width:100%;min-height:170px;border:2px solid var(--line);border-radius:12px;padding:12px;font:17px "Atkinson Hyperlegible",Verdana,sans-serif;direction:ltr;background:var(--card);color:var(--ink)}
+.chk span{display:inline-block;margin:4px 4px 0 0;padding:2px 12px;border-radius:999px;background:var(--line);font-size:14px}.chk span.ok{background:var(--ok);color:#fff}
+@media(max-width:520px){body{font-size:16px}}
+:root{color-scheme:light;--bg:#f2f6ff;--card:#fff;--ink:#14214d;--mute:#5b6791;--line:#14214d;--acc:#3b5bfd;--hi:#ffc83d;--ok:#12a36b;--bad:#e5484d;--okbg:#d9f7ea;--badbg:#ffe1e1;--pink:#ff7eb6;--mint:#2ed3a0;--sh:5px 5px 0 #14214d}
+body{background:radial-gradient(circle at 12% 8%,#dfe8ff 0,transparent 40%),radial-gradient(circle at 92% 30%,#d9fff1 0,transparent 38%),radial-gradient(circle at 20% 95%,#fff1c9 0,transparent 40%),var(--bg);background-attachment:fixed}
+header{position:relative;overflow:hidden;background:linear-gradient(135deg,#3b5bfd 0,#6a4cff 55%,#b04dff 100%);padding:44px 20px 34px;border-bottom:4px solid var(--ink)}
+header::before,header::after{content:"";position:absolute;border-radius:50%;border:4px solid var(--ink)}
+header::before{width:170px;height:170px;background:var(--hi);left:-40px;top:-60px}
+header::after{width:110px;height:110px;background:var(--mint);left:22%;bottom:-55px}
+header h1,header p{position:relative;max-width:860px;margin-inline:auto;text-shadow:3px 3px 0 rgba(20,33,77,.45)}
+header h1{font-size:clamp(30px,7vw,54px)}
+header p{color:#fff;text-shadow:none;font-weight:600;opacity:.95}
+header mark{display:inline-block;background:var(--hi);border:3px solid var(--ink);box-shadow:var(--sh);transform:rotate(-2deg);padding:0 14px;text-shadow:none;margin-top:8px}
+nav{background:#fff;border-top:0;border-bottom:3px solid var(--ink);padding:10px 12px;justify-content:center}
+nav button{flex:0 0 auto;background:#eef2ff;color:var(--ink);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+nav button:hover{transform:translate(-1px,-1px)}
+nav button.on{background:var(--hi);transform:translate(3px,3px);box-shadow:0 0 0 var(--ink)}
+.card,details,.q{border:3px solid var(--ink);box-shadow:var(--sh);border-radius:20px}
+.card{background:linear-gradient(#fff,#fff) padding-box}
+details{overflow:hidden}
+details:nth-of-type(5n+1) summary{background:#dfe6ff}details:nth-of-type(5n+2) summary{background:#d9f7ea}details:nth-of-type(5n+3) summary{background:#ffe9b8}details:nth-of-type(5n+4) summary{background:#ffdcec}details:nth-of-type(5n) summary{background:#e9dcff}
+summary{font-size:19px;border-bottom:0}
+details[open] summary{background:var(--acc)!important;color:#fff;border-bottom:3px solid var(--ink)}
+.rule{background:#fff8dc;border:2px solid var(--ink);border-right-width:8px;border-right-color:var(--acc);border-radius:12px}
+.ex{background:var(--okbg);border:2px dashed var(--ok);border-radius:12px}
+.tag{background:var(--pink);color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:0 10px}
+table{border:2px solid var(--ink);border-collapse:separate;border-spacing:0;border-radius:12px;overflow:hidden}td,th{border:1px solid #c9d3f5}th{background:#e4eaff;color:var(--ink)}
+.pills button,.btn{border:3px solid var(--ink);color:var(--ink);background:#fff;box-shadow:3px 3px 0 var(--ink);border-radius:14px;transition:transform .12s,box-shadow .12s}
+.pills button:hover,.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.pills button.on,.btn.fill{background:var(--acc);color:#fff;transform:translate(1px,1px)}
+.btn.fill{font-size:18px;padding:10px 26px;background:linear-gradient(135deg,#3b5bfd,#8a4dff)}
+.o{border:2px solid var(--ink);background:#f6f8ff;border-radius:14px;box-shadow:2px 2px 0 var(--ink);transition:transform .1s}
+.o:hover{transform:translateY(-2px);background:#fff;border-color:var(--ink)}
+.o.pick{background:#dfe6ff;border-color:var(--acc);box-shadow:3px 3px 0 var(--acc)}
+.o.right{background:var(--okbg);border-color:var(--ok);box-shadow:3px 3px 0 var(--ok)}
+.o.wrong{background:var(--badbg);border-color:var(--bad);box-shadow:3px 3px 0 var(--bad)}
+.why{background:#fff8dc;border:2px solid var(--ink);border-radius:12px}
+.score{background:var(--hi);border:3px solid var(--ink);box-shadow:3px 3px 0 var(--ink);border-radius:14px;font-size:18px}
+.big{font-size:80px;background:linear-gradient(135deg,#3b5bfd,#b04dff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bar{height:16px;border:2px solid var(--ink);background:#fff;border-radius:99px}.bar i{background:linear-gradient(90deg,var(--mint),#3b5bfd)}
+.fc{border:3px solid var(--ink);border-style:solid;box-shadow:8px 8px 0 var(--ink);background:linear-gradient(135deg,#fff,#eef2ff);font-size:34px;border-radius:24px;min-height:240px}
+.fc:active{transform:translate(3px,3px);box-shadow:4px 4px 0 var(--ink)}
+textarea{border:3px solid var(--ink);border-radius:16px;box-shadow:var(--sh);background:#fff}
+.chk span{border:2px solid var(--ink);background:#fff;font-weight:700}.chk span.ok{background:var(--mint);color:var(--ink)}
+section.on{animation:pop .25s ease-out}td.en,th.en{display:table-cell}@keyframes pop{from{opacity:0;transform:translateY(8px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+nav{justify-content:flex-start;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav button:first-child{margin-inline-start:auto}nav button:last-child{margin-inline-end:auto}
+@media(max-width:600px){
+body{font-size:16px;line-height:1.75}
+header{padding:20px 16px 18px}header::before{width:84px;height:84px;left:-28px;top:-38px}header::after{width:56px;height:56px;bottom:-28px;left:30%}
+header h1{font-size:27px;line-height:1.35}header mark{padding:0 10px;margin-top:4px}header p{font-size:14px;line-height:1.6;margin-top:10px}
+nav{padding:8px 10px;gap:8px}nav button{padding:8px 14px;font-size:14px}
+main{padding:12px 10px 50px}
+.card,details,.q{border-width:2px;box-shadow:3px 3px 0 var(--ink);border-radius:16px}
+summary{font-size:16px;padding:12px 14px}.body{padding:4px 12px 14px}
+td,th{padding:5px 6px;font-size:13px}
+.o{padding:12px 14px;font-size:16px}
+.btn.fill{width:100%}
+.score{font-size:16px;top:calc(54px + env(safe-area-inset-top,0px))}
+.big{font-size:64px}.fc{font-size:28px;min-height:200px}
+textarea{min-height:200px}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>امتحان Grade 10 النصفي<br><mark>Units 2 &amp; 3</mark></h1>
+<p>اشرح، تدرّب، جرّب امتحان كامل بالوقت. الأقسام: Grammar · Vocabulary · Reading · Writing · Story</p>
+</header>
+<nav id="nav">
+<button data-t="study" class="on">📘 الشرح</button><button data-t="prac">✏️ تدريب</button><button data-t="mock">⏱️ امتحان تجريبي</button><button data-t="cards">🃏 كلمات</button><button data-t="lab">📝 Writing</button>
+</nav>
+<main>
+
+<section id="study" class="on">
+<div class="card"><b>طريقة المذاكرة المقترحة:</b> اقرأ كل درس هنا ← حل التدريب ← جرّب الامتحان التجريبي ← راجع أخطاءك. كل شرح مبني على كتابك (Unit 2 و Unit 3 فقط).</div>
+
+<details open><summary>1) Present Perfect <span class="tag">Unit 2</span></summary><div class="body">
+<div class="rule"><b>الشكل:</b> <span class="en">have / has + V3 (past participle)</span></div>
+<p>نستخدمه لفعل حصل في الماضي <b>وله أثر على الحاضر</b>. وغالبًا معه الكلمات:</p>
+<p class="en"><b>just · already · not … yet · still … not · so far</b></p>
+<div class="ex en">The girls have just set off. (يعني هم الآن يركضون)</div>
+<div class="ex en">We have not found another clue so far. (لسه ندوّر)</div>
+<div class="ex en">We still haven't seen that wall.</div>
+<p><b>تذكّر:</b> I/you/we/they + <span class="en">have</span> — he/she/it + <span class="en">has</span>. النفي: <span class="en">haven't / hasn't</span>.</p>
+</div></details>
+
+<details><summary>2) Present Perfect Continuous <span class="tag">Unit 2</span></summary><div class="body">
+<div class="rule"><b>الشكل:</b> <span class="en">have / has + been + V-ing</span></div>
+<p>لفعل <b>بدأ في الماضي ولسه مستمر</b> للآن. نكرر الفعل أو نقول <span class="en">for ages</span> لنؤكد أن المدة طويلة.</p>
+<div class="ex en">We have been running for ages.</div>
+<div class="ex en">We have been going the wrong way.</div>
+<div class="ex en">How long has Lana been playing the piano? — She has been doing that for a year.</div>
+<table><tr><th>for</th><th>since</th></tr><tr><td>+ مدة: <span class="en">a year, an hour, ages, three years</span></td><td>+ نقطة بداية: <span class="en">the age of four, 8:00 am, last year</span></td></tr></table>
+</div></details>
+
+<details><summary>3) Past Simple أم Present Perfect؟ <span class="tag">Unit 2</span></summary><div class="body">
+<table><tr><th>Past simple</th><th>Present perfect</th></tr>
+<tr><td>فعل انتهى في وقت <b>محدد</b> في الماضي</td><td>فعل ماضٍ <b>مرتبط بالحاضر</b></td></tr>
+<tr><td class="en">A ship found them at 6:30 am.<br>I left on 7th August.</td><td class="en">GPS has saved many lives.<br>Satnavs have become popular in recent years.</td></tr>
+<tr><td class="en">yesterday, ago, last week, in 2004, at 6:30, When…?</td><td class="en">so far, just, already, yet, recently, in recent years, How long…?</td></tr></table>
+<div class="rule">سؤال محدد الوقت: <span class="en">When did you start?</span> (past simple) — سؤال عن المدة للآن: <span class="en">How far have you travelled so far?</span> (present perfect)</div>
+</div></details>
+
+<details><summary>4) Modal Verbs في الحاضر <span class="tag">Unit 3</span></summary><div class="body">
+<table><tr><th>Modal</th><th>المعنى</th><th>مثال</th></tr>
+<tr><td class="en">can / can't</td><td>قدرة / سماح</td><td class="en">You can carry the ball in rugby. We can't leave the city.</td></tr>
+<tr><td class="en">may / might</td><td>احتمال</td><td class="en">We may hurt ourselves. You might not know rugby.</td></tr>
+<tr><td class="en">could</td><td>طلب أو اقتراح</td><td class="en">Could you send me photos? I could email you some.</td></tr>
+<tr><td class="en">shall I…?</td><td>عرض / اقتراح</td><td class="en">Shall I email you some photos?</td></tr>
+<tr><td class="en">should / shouldn't</td><td>نصيحة (فكرة جيدة)</td><td class="en">You should see it.</td></tr>
+<tr><td class="en">must</td><td>ضروري (أنا أشعر بذلك)</td><td class="en">It's late; I must stop.</td></tr>
+<tr><td class="en">mustn't</td><td>ممنوع / ضروري ألا…</td><td class="en">You mustn't worry. Don't use that path!</td></tr>
+<tr><td class="en">have to / need to</td><td>ضروري (غيري يفرضه)</td><td class="en">We have to do homework.</td></tr>
+<tr><td class="en">don't have to / don't need to</td><td>مش ضروري (مسموح بس مو لازم)</td><td class="en">You don't have to kick the ball.</td></tr></table>
+<div class="rule"><b>فخ مهم:</b> <span class="en">mustn't</span> = ممنوع، لكن <span class="en">don't have to</span> = مش لازم. مختلفين تمامًا!</div>
+</div></details>
+
+<details><summary>5) Modals في الماضي <span class="tag">Unit 3</span></summary><div class="body">
+<table><tr><th>الحاضر</th><th>الماضي</th></tr>
+<tr><td class="en">can</td><td class="en">could / was able to</td></tr>
+<tr><td class="en">can't</td><td class="en">couldn't / wasn't able to</td></tr>
+<tr><td class="en">must / have to</td><td class="en">had to</td></tr>
+<tr><td class="en">don't have to</td><td class="en">didn't have to</td></tr></table>
+<div class="ex en">At five, Ann could make biscuits. Now she can make a wedding cake.</div>
+<div class="ex en">At 14, Joe had to build his own bike. He was able to build it that weekend.</div>
+<div class="ex en">Ann didn't have to make cakes for her friends, but she did.</div>
+<div class="rule">للإنجاز مرة واحدة في موقف معين نفضّل <span class="en">was able to</span> (managed to). و<span class="en">could</span> للقدرة العامة في الماضي.</div>
+</div></details>
+
+<details><summary>6) Writing: Short forms · Possessives · Paragraph <span class="tag">Unit 3</span></summary><div class="body">
+<table><tr><th>Full</th><th>Short</th></tr><tr><td class="en">it is / should not / we are</td><td class="en">it's / shouldn't / we're</td></tr><tr><td class="en">you would / I am / cannot</td><td class="en">you'd / I'm / can't</td></tr></table>
+<p><span class="en">'s</span> قد تكون: <span class="en">is</span> (Mark's running) أو <span class="en">has</span> (Mark's just scored) أو ملكية (Mark's bike). و<span class="en">I'd</span> = <span class="en">I had</span> أو <span class="en">I would</span>.</p>
+<div class="ex en">the boy's bike (واحد) · the two boys' bikes (جمع بـ s) · the children's quads (جمع شاذ بدون s)</div>
+<div class="rule"><b>الفقرة (paragraph):</b> جملة رئيسية (topic sentence) ← تفاصيل ← استخدم كلمات الربط <span class="en">but, and, because, also</span>. في الكتاب: اكتب فقرة عن حياتك اليومية (what time you get up, homework, free time, what you can't do and why).</div>
+</div></details>
+
+<details><summary>7) Writing: Sequence markers وترتيب القصة <span class="tag">Unit 2</span></summary><div class="body">
+<p class="en"><b>First,</b> … <b>Then,</b> … <b>After that,</b> … <b>Finally,</b> …</p>
+<ol><li>ابدأ بجملة <b>topic sentence</b>: <span class="en">I remember when my friends and I did a treasure hunt in the park.</span></li><li>رتّب الأحداث زمنيًا.</li><li>أضف sequence markers واختصر الجمل.</li></ol>
+<p>في Creating a puzzle استخدم الماضي البسيط والـ present perfect: <span class="en">You went out of the school gate five minutes ago… You have just passed a big shop. Where are you?</span></p>
+</div></details>
+
+<details><summary>8) Reading: ملخص النصوص <span class="tag">Unit 2 + 3</span></summary><div class="body">
+<p><b>Finding the way (GPS):</b> <span class="en">Mark Stubbs</span> وفريقه أرادوا التجديف عبر الأطلسي من كندا لبريطانيا. بعد 40 يومًا و3000 كم وعلى بُعد 450 كم من اليابسة، ضربت عاصفة ليلًا وموجة ضخمة دمّرت قاربهم (2:30 am). أنقذوا: <span class="en">life raft + satellite phone + GPS</span>. استخدموا الـGPS لمعرفة موقعهم، اتصلوا، وسفينة وجدتهم 6:30 am. الـGPS يستخدم أقمارًا صناعية تدور بسرعة <span class="en">19,300 kph</span>، ويحتاج لرؤية <b>3 أقمار أو أكثر</b> ليحسب بُعده عنها. الـsatnav يعرض موقع السيارة على الخريطة ويجيب: أين بدأت؟ كم قطعت؟ كم المدة؟ ما سرعتي؟ والكاتب يصفه بـ <span class="en">modern technology at its best</span>.</p>
+<p><b>Emails (Free-time):</b> <span class="en">Michiko</span> (طوكيو): Grade 11، وقت فراغ قليل، تنس مع أصدقائها (نشاط)، وترتيب الزهور (هادئ). <span class="en">Larry</span> (جنوب أفريقيا، مزرعة ليمون): دراجات رباعية quad bikes وrafting (أمه قلقة: <span class="en">we may hurt ourselves</span>)، ويرسم المنظر. <span class="en">Lucy</span> (نيوزيلندا): أخوها Mark يلعب rugby، وهي تحب camping مع الكشافة والتصوير.</p>
+<p><b>Turning a hobby into a business:</b> <span class="en">Joe</span> يحب الدراجات؛ أبوه فقد عمله ولم يستطيعوا شراء واحدة، فأخذ دراجة قديمة مجانًا من جاره Mr Wilson، ثم وجد أخرى مشابهة مجانًا، وبنى دراجته، والآن يفكر بعمل تجاري. <span class="en">Ann</span> بدأت تساعد أمها في البسكويت عمرها 5، ثم الكيك، أحبها الأطفال وأمهاتهم، تتالت الطلبات، ومحل كيك طلب منها التوريد (لا يجب أن تقبل كل الطلبات)، ومشروعها الحالي كيكة زفاف لـ100 شخص.</p>
+</div></details>
+
+<details><summary>9) Story: Around the World in Eighty Days <span class="tag">Chapters 2 &amp; 3</span></summary><div class="body">
+<p><b>الشخصيات:</b> <span class="en">Phileas Fogg</span> (هادئ ويحمل £20,000) · <span class="en">Passepartout</span> (خادمه، متحمس ويخطئ) · <span class="en">Mr Fix</span> (محقق لندن، يظن أن Fogg لص البنك) · <span class="en">Sir Francis Cromarty</span> (ضابط بريطاني) · <span class="en">Aouda</span> (الشابة المُنقَذة، عمّها في هونغ كونغ).</p>
+<p><b>Ch.2 East to India:</b> قطار لإيطاليا ثم سفينة <span class="en">Mongolia</span> لبومباي. بعد 7 أيام توقفت في Suez، وFix رأى Fogg يشبه وصف اللص فتبعه سرًّا، وعرف من Passepartout أنهم يسافرون حول العالم ويحملون £20,000. Fix ركب السفينة لأنه يستطيع الاعتقال في الهند (<span class="en">British colony</span>) وطلب أوراق الاعتقال لبومباي. Fogg وعد المهندس بمال فوصلوا <span class="en">4:30 pm, 20 October</span> قبل موعدهم بيومين. Passepartout دخل المعبد دون خلع حذائه فهاجمه الكهنة، فهرب بلا حذاء وقبّعة وأخبر Fogg في المحطة. Fix سمع القصة وقرر ألا يركب القطار، وبدأت عنده فكرة جديدة.</p>
+<p><b>Ch.3 Saving Aouda:</b> قطار الهند: السكة لم تُكمَل حتى <span class="en">Allahabad</span> (50 ميل). Fogg اشترى فيلًا بـ<span class="en">£2,000</span> ومعه guide. في الغابة شاهدوا مراسم <span class="en">suttee</span>: امرأة ستُحرق مع زوجها الميت. Fogg وSir Francis أرادوا إنقاذها. صباحًا، الجثة فوق النار قامت فجأة وحملت المرأة: كان <b>Passepartout</b>! هربوا بالفيل. في Allahabad أعطى Fogg الفيل للـguide. Aouda شكرتهم بإنجليزية ممتازة، وFogg عرض أن يأخذها لعمّها في Hong Kong، ووصلوا Calcutta <span class="en">7 am, 25 October</span>، لم يتأخروا ولم يكونوا مبكرين.</p>
+<p><b>كلمات مهمة:</b> <span class="en">arrest, colony, consulate, temple, priest, conductor, burn, rushed, lift, mile</span>.</p>
+</div></details>
+
+<details><summary>10) نصائح لنمط الامتحان</summary><div class="body"><ul>
+<li><b>Grammar:</b> ابحث عن كلمة الزمن أولًا (<span class="en">for/since/yet/ago</span>) ثم قرر الزمن.</li>
+<li><b>Reading:</b> اقرأ الأسئلة قبل النص، وأجب بجملة كاملة بكلماتك من النص.</li>
+<li><b>Vocabulary:</b> انتبه لشكل الكلمة (noun / adjective / verb) وللتصريف (فعل ماضٍ؟ جمع؟).</li>
+<li><b>Writing:</b> topic sentence + sequence markers + نهاية. راجع الأقواس <span class="en">'s</span> و<span class="en">don't</span> والنقطة والحرف الكبير.</li>
+<li><b>Story:</b> احفظ: من؟ أين؟ متى؟ لماذا؟ وتواريخ 20 و25 October.</li>
+<li>وزّع الوقت: لا تقف طويلًا على سؤال واحد؛ اترك الصعب للآخر.</li></ul></div></details>
+</section>
+
+<section id="prac">
+<p>اختر قسم وحل. تظهر الإجابة والشرح فورًا.</p>
+<div class="pills" id="pp"></div>
+<div id="pbox"></div>
+</section>
+
+<section id="mock">
+<div id="mstart" class="card"><h2 style="margin:0">امتحان تجريبي</h2><p>21 سؤال من الأقسام الخمسة (أسئلة مختلفة كل مرة) + مهمة كتابة. الوقت 25 دقيقة، والنتيجة تظهر بعد التسليم مع تحليل نقاط ضعفك.</p><button class="btn fill" id="mgo">ابدأ الامتحان</button></div>
+<div id="mrun" hidden><div class="score"><span id="mt">25:00</span><span id="mc"></span></div><div id="mq"></div><button class="btn fill" id="msub">سلّم الامتحان</button></div>
+<div id="mres" hidden></div>
+</section>
+
+<section id="cards">
+<p>اضغط البطاقة لتقلبها، ثم قيّم نفسك. ما تعرفه يختفي من الدورة.</p>
+<div class="fc" id="fc" tabindex="0" role="button"></div>
+<div class="pills"><button class="btn fill" id="fk">عرفتها ✔</button><button class="btn" id="fa">أعدها 🔁</button></div>
+<p id="fs"></p>
+</section>
+
+<section id="lab">
+<div class="card"><b>اختر موضوعًا واكتب بالإنجليزي</b> — العدّاد يتحقق تلقائيًا من العناصر المطلوبة.</div>
+<div class="pills" id="wt"></div>
+<p class="en" id="wp" style="font-weight:700"></p>
+<textarea id="wa" placeholder="Write here…" spellcheck="true"></textarea>
+<p class="chk" id="wc"></p>
+<details><summary>نموذج جاهز (Model answer)</summary><div class="body en" id="wm"></div></details>
+</section>
+</main>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+// ---------- QUESTION BANK: [question, options, correctIndex, explanation] ----------
+const Q={
+Grammar:[
+["The girls ___ just set off.",["have","has","are","did"],0,"الفاعل جمع (girls) ← have + V3 مع just."],
+["We ___ running for ages.",["have been","has been","have","were"],0,"for ages = استمرار حتى الآن ← present perfect continuous."],
+["Lana has been playing the piano ___ a year.",["since","for","ago","at"],1,"for + مدة (a year)."],
+["She has been writing ___ the age of four.",["for","since","in","during"],1,"since + نقطة بداية."],
+["A ship ___ them at 6:30 am.",["has found","finds","found","have found"],2,"وقت محدد انتهى ← past simple."],
+["GPS ___ many lives.",["saved","has saved","was saving","saves"],1,"ماضٍ له أثر على الحاضر ← present perfect."],
+["We haven't found another clue ___.",["yet","ago","last year","already"],0,"not … yet مع present perfect."],
+["I forgot my key, so I ___ open the car door.",["can't","could","might","shall"],0,"عدم القدرة الآن ← can't."],
+["The key ___ be in the living room. (maybe)",["must not","might","has to","shall"],1,"might / may للاحتمال."],
+["___ I email you some photos? (offer)",["Shall","Must","Might","Should"],0,"Shall I … ? للعرض."],
+["You ___ use that path. It is collapsing into the sea!",["don't have to","could","mustn't","may"],2,"mustn't = ممنوع / خطر."],
+["Tomorrow's a holiday, so I ___ get up early.",["mustn't","don't need to","can't","shall"],1,"don't need to = مش لازم."],
+["At 14, Joe ___ build his own bike. He had no choice.",["has to","must","had to","should"],2,"ضرورة في الماضي ← had to."],
+["That weekend, Joe ___ build his new bike. (he managed to)",["could","was able to","had can","must"],1,"إنجاز مرة واحدة ← was able to."],
+["Ann ___ accept every order, only the ones she can manage.",["doesn't have to","mustn't","hasn't to","not must"],0,"doesn't have to = غير ملزمة."],
+["I was late for practice, so I ___ run.",["must","have to","had to","am able to"],2,"ضرورة في الماضي ← had to."]],
+Vocabulary:[
+["A riddle is …",["a prize","a puzzle with clues","a small boat","a kind of storm"],1,"riddle = لغز."],
+["'set off' means …",["start a journey","stop","get lost","sail back"],0,"set off = ينطلق."],
+["GPS stands for …",["Global Positioning System","Great Path Signal","General Place Sender","Global Phone Service"],0,"نظام تحديد المواقع العالمي."],
+["The moon ___ the Earth.",["orbits","rows","measures","supplies"],0,"orbit (v) = يدور في مدار."],
+["Hisham is the most ___ of us all. (full of energy)",["energy","energetic","energetically","energies"],1,"adjective: energetic."],
+["Photography is my other big ___ .",["interest","interesting","interested","interestingly"],0,"big + noun ← interest."],
+["We can't ___ a new bike. It costs too much.",["afford","accept","supply","recycle"],0,"afford = يتحمّل ثمنه."],
+["'for free' means …",["without paying","very fast","on my own","at least"],0,"for free = مجانًا."],
+["They use old glass to make new bottles. They ___ it.",["recycle","decorate","measure","row"],0,"recycle = يعيد التدوير."],
+["Two pictures that are almost the same are ___ .",["missing","similar","pretty","senior"],1,"similar = مشابه."],
+["I need to ___ the window to know its exact size.",["measure","row","supply","miss"],0,"measure = يقيس."],
+["The opposite of 'best' is …",["better","worst","last","least"],1,"best ≠ worst."]],
+Reading:[
+["After the wave, why did the men use their GPS?",["to find their position","to catch fish","to row faster","to take photos"],0,"لمعرفة موقعهم ثم طلب المساعدة."],
+["Which three things saved their lives?",["life raft, satellite phone, GPS","food, tent, radio","boat, map, camera","ship, car, satnav"],0,"النص: raft + satellite phone + GPS."],
+["GPS equipment needs to 'see' at least ___ satellites.",["two","three","five","ten"],1,"three أو أكثر."],
+["'Modern technology at its best' means GPS is …",["an excellent, useful example of technology","old and slow","too expensive","dangerous"],0,"وصف إيجابي للـGPS."],
+["Why did Joe build his own bike?",["His family couldn't afford a new one","He won a prize","He hated bikes","His school asked him"],0,"أبوه فقد وظيفته."],
+["How did Ann become known for her cakes?",["People loved them and asked for more","She was on TV","She opened a school","She won a race"],0,"أحبّها الأطفال وأمهاتهم وتتالت الطلبات."],
+["Why does Larry's mother worry?",["He may hurt himself","He is always late","He has no friends","He can't swim"],0,"quad bikes وrafting خطيرة."],
+["What is Michiko not happy about?",["She has little leisure time","She hates tennis","She lives on a farm","She can't afford a camera"],0,"Grade 11 وexam practice school."]],
+Story:[
+["Why was Mr Fix interested in Fogg?",["Fogg looked like the bank robber","Fogg owed him money","Fogg was his friend","Fogg was a policeman"],0,"طابق وصف لص البنك."],
+["Why did Fix follow Fogg to Bombay?",["He could arrest Fogg there (British colony)","He wanted a holiday","He liked trains","He wanted an elephant"],0,"الهند مستعمرة بريطانية."],
+["What mistake did Passepartout make in the temple?",["He didn't take off his shoes","He stole a hat","He wouldn't pay","He broke a window"],0,"الجميع يخلع حذاءه في المعبد."],
+["How did the ship reach Bombay two days early?",["Fogg promised the engineer a lot of money","The sea was calm","They changed ships","They used a train"],0,"£100 لكل يوم يختصره."],
+["Why did everyone have to get off the train?",["The railway wasn't finished","The train broke down","A storm came","Robbers attacked"],0,"تبدأ السكة من جديد عند Allahabad."],
+["What did Fogg buy to continue the journey?",["An elephant for £2,000","A horse","A car","A boat"],0,"فيل بـ£2,000."],
+["Who pretended to be the dead husband?",["Passepartout","Fix","Sir Francis","The guide"],0,"Passepartout أنقذ Aouda."],
+["Where did Aouda's uncle live?",["Hong Kong","Bombay","Suez","London"],0,"Fogg عرض أخذها إلى Hong Kong."],
+["Who is Sir Francis Cromarty?",["A British army officer","A detective","A priest","The ship's engineer"],0,"ضابط بريطاني يعرف الهند."],
+["When did they reach Calcutta?",["7 am, 25 October","4:30 pm, 20 October","8 pm, 20 October","7 am, 20 October"],0,"20 Oct كانت بومباي، و25 Oct كلكتا."]],
+Writing:[
+["Short form of 'should not':",["shouldnt","shouldn't","should'nt","should n't"],1,"الفاصلة مكان الحرف المحذوف: shouldn't."],
+["This is ___ flower arrangement.",["Michikos","Michiko's","Michikos'","Michiko"],1,"ملكية مفرد ← 's."],
+["The two ___ bikes are outside. (two boys)",["boy's","boys'","boys's","boys"],1,"جمع بـ s ← s'."],
+["Our ___ quads are outside. (many children)",["childrens'","children's","childrens","childs'"],1,"children جمع شاذ ← children's."],
+["Which is a topic sentence?",["I remember when my friends and I did a treasure hunt in the park.","The box was under the tree.","Finally, the boys ate the chocolates.","Then we ran."],0,"تقدّم الفكرة العامة للفقرة."],
+["Best order of sequence markers:",["Finally, First, Then","First, Then, After that, Finally","Then, Finally, First","After that, First, Finally"],1,"من البداية للنهاية."],
+["'It's' can mean …",["it is / it has","possessive of it","it was","it will"],0,"its (بدون فاصلة) = ملكية."]]
+};
+// ---------- NAV ----------
+$$('#nav button').forEach(b=>b.onclick=()=>{$$('#nav button').forEach(x=>x.classList.toggle('on',x===b));$$('main>section').forEach(s=>s.classList.toggle('on',s.id===b.dataset.t));scrollTo(0,0)});
+// ---------- QUIZ RENDER ----------
+const qh=(q,i,k,tag)=>`<div class="q" data-k="${k}" data-i="${i}"><p class="en">${i+1}. ${q[0]}${tag?` <span class="tag">${k}</span>`:''}</p>${q[1].map((o,j)=>`<button class="o en" data-j="${j}">${o}</button>`).join('')}<p class="why" hidden></p></div>`;
+// ---------- PRACTICE ----------
+let pk='Grammar',ps={d:0,r:0},pset=[];
+$('#pp').innerHTML=Object.keys(Q).map(k=>`<button data-k="${k}">${k} (${Q[k].length})</button>`).join('');
+function pstart(k){pk=k;ps={d:0,r:0};pset=[...Q[k]].sort(()=>Math.random()-.5);
+ $$('#pp button').forEach(b=>b.classList.toggle('on',b.dataset.k===k));
+ $('#pbox').innerHTML=`<div class="score"><span>${k}</span><span id="ps">0 / ${pset.length}</span></div>`+pset.map((q,i)=>qh(q,i,k)).join('')+`<button class="btn" id="pre">🔁 أعد التمرين</button>`;
+ $('#pre').onclick=()=>pstart(k)}
+$('#pp').onclick=e=>{if(e.target.dataset.k)pstart(e.target.dataset.k)};
+$('#pbox').onclick=e=>{const o=e.target.closest('.o');if(!o)return;const q=o.closest('.q');if(q.dataset.done)return;q.dataset.done=1;
+ const it=pset[q.dataset.i],j=+o.dataset.j;ps.d++;if(j===it[2])ps.r++;
+ q.querySelectorAll('.o')[it[2]].classList.add('right');if(j!==it[2])o.classList.add('wrong');
+ const w=q.querySelector('.why');w.hidden=false;w.innerHTML=(j===it[2]?'✅ صح. ':'❌ الصحيح: <span class="en"><b>'+it[1][it[2]]+'</b></span>. ')+it[3];
+ $('#ps').textContent=`${ps.r} / ${pset.length}`+(ps.d===pset.length?(ps.r===ps.d?' 🏆':' ✔'):'')};
+pstart('Grammar');
+// ---------- MOCK EXAM ----------
+const plan={Grammar:6,Vocabulary:4,Reading:4,Story:4,Writing:3};let M=[],tmr,left=0;
+const fmt=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+$('#mgo').onclick=()=>{M=[];for(const k in plan)[...Q[k]].sort(()=>Math.random()-.5).slice(0,plan[k]).forEach(q=>M.push({k,q,p:-1}));
+ $('#mstart').hidden=true;$('#mres').hidden=true;$('#mrun').hidden=false;
+ $('#mq').innerHTML=M.map((m,i)=>qh(m.q,i,m.k,1)).join('');left=1500;upd();clearInterval(tmr);tmr=setInterval(()=>{left--;upd();if(left<=0)finish()},1000);scrollTo(0,0)};
+function upd(){$('#mt').textContent='⏱ '+fmt(left);$('#mc').textContent=`أجبت ${M.filter(m=>m.p>=0).length} / ${M.length}`}
+$('#mq').onclick=e=>{const o=e.target.closest('.o');if(!o)return;const q=o.closest('.q');q.querySelectorAll('.o').forEach(x=>x.classList.remove('pick'));o.classList.add('pick');M[q.dataset.i].p=+o.dataset.j;upd()};
+$('#msub').onclick=()=>{if(M.some(m=>m.p<0)&&!confirm('فيه أسئلة بدون إجابة. تسلّم؟'))return;finish()};
+function finish(){clearInterval(tmr);$('#mrun').hidden=true;const r=$('#mres');r.hidden=false;
+ const by={};M.forEach(m=>{by[m.k]=by[m.k]||[0,0];by[m.k][1]++;if(m.p===m.q[2])by[m.k][0]++});
+ const s=M.filter(m=>m.p===m.q[2]).length,pc=Math.round(s/M.length*100);
+ const msg=pc>=90?'ممتاز! أنت جاهز 🏆':pc>=70?'جيد جدًا. راجع أخطاءك فقط.':pc>=50?'مقبول. ارجع للشرح في الأقسام الضعيفة.':'محتاج مراجعة. ابدأ من الشرح ثم التدريب.';
+ r.innerHTML=`<div class="card"><div class="big">${pc}%</div><p><b>${s} / ${M.length}</b> — ${msg}</p>`+Object.entries(by).map(([k,v])=>`<p style="margin:6px 0">${k}: ${v[0]}/${v[1]}<span class="bar"><i style="width:${v[0]/v[1]*100}%"></i></span></p>`).join('')+`</div>
+ <h3>مراجعة الأخطاء</h3>`+(M.filter(m=>m.p!==m.q[2]).map(m=>`<div class="q"><p class="en">${m.q[0]} <span class="tag">${m.k}</span></p><p class="why">إجابتك: <span class="en">${m.p<0?'—':m.q[1][m.p]}</span><br>✅ الصحيح: <span class="en"><b>${m.q[1][m.q[2]]}</b></span><br>${m.q[3]}</p></div>`).join('')||'<p>لا أخطاء! 🎉</p>')+
+ `<div class="card"><b>مهمة الكتابة:</b> افتح تبويب 📝 Writing وتدرّب على موضوع كامل.</div><button class="btn fill" onclick="$('#mres').hidden=true;$('#mstart').hidden=false">امتحان جديد</button>`;scrollTo(0,0)}
+// ---------- FLASHCARDS ----------
+const W=[["clue","تلميحة / دليل"],["riddle","لغز"],["track","مسار / طريق ضيق"],["prize","جائزة"],["treasure hunt","البحث عن كنز"],["set off","ينطلق"],["scout","كشّاف"],["exactly","بالضبط"],["GPS","نظام تحديد المواقع"],["kph","كيلومتر في الساعة"],["life raft","قارب نجاة"],["measure","يقيس"],["nearly","تقريبًا"],["orbit","يدور في مدار"],["position","الموقع"],["row","يجدّف"],["satellite phone","هاتف بالأقمار الصناعية"],["satnav","ملاحة بالأقمار"],["storm","عاصفة"],["wave","موجة"],["arrangement","ترتيب"],["at least","على الأقل"],["across","عبر"],["island","جزيرة"],["leisure","وقت الفراغ"],["senior","كبير / متقدم"],["view","منظر"],["energetic","نشيط"],["afford","يتحمّل ماليًا"],["business","تجارة / مشروع"],["castle","قلعة"],["decorate","يزيّن"],["frame","هيكل / إطار"],["for free","مجانًا"],["on my own","بمفردي"],["recycle","يعيد التدوير"],["similar","مشابه"],["supply","يزوّد"],["think of","يفكر في (فكرة)"],["turn into","يتحوّل إلى"],["missing","مفقود"],["accept","يقبل"],["arrest","يعتقل"],["colony","مستعمرة"],["conductor","مراقب القطار"],["burn","يحرق"],["rush","يسرع"],["lift","يرفع"]];
+let deck=[],fl=false,known=0;
+function fnew(){deck=[...W].sort(()=>Math.random()-.5);known=0;fshow()}
+function fshow(){fl=false;const c=$('#fc');if(!deck.length){c.innerHTML='🎉 خلصت كل البطاقات!<br><small>اضغط لإعادة الدورة</small>';$('#fs').textContent=`عرفت ${known} من ${W.length}`;return}
+ c.innerHTML=`<span class="en">${deck[0][0]}</span><small>اضغط لإظهار المعنى</small>`;$('#fs').textContent=`متبقي ${deck.length} · عرفت ${known}`}
+$('#fc').onclick=()=>{if(!deck.length)return fnew();fl=!fl;$('#fc').innerHTML=fl?`${deck[0][1]}<small class="en">${deck[0][0]}</small>`:`<span class="en">${deck[0][0]}</span><small>اضغط لإظهار المعنى</small>`};
+$('#fk').onclick=()=>{if(deck.length){deck.shift();known++;fshow()}};
+$('#fa').onclick=()=>{if(deck.length){deck.push(deck.shift());fshow()}};
+fnew();
+// ---------- WRITING LAB ----------
+const T=[
+{n:'Treasure hunt story',p:'Write a story (60+ words): "I remember when my friends and I did a treasure hunt…" Use sequence markers and the past simple.',
+ need:[['Topic sentence',/i remember when/i],['First',/\bfirst\b/i],['Then',/\bthen\b/i],['After that',/after that/i],['Finally',/\bfinally\b/i],['60+ words',null,60]],
+ m:'I remember when my friends and I did a treasure hunt in the park. First, we started near a tree and we were told about the prize, a big box of chocolates. Then the first clue sent us to the end of the park. After that, the second clue pointed to the park gate. Finally, we arrived at the tree and found the box, but two small boys were eating the last chocolates!'},
+{n:'My daily life',p:'Write a paragraph (60+ words) about your regular day. Say what you have to do and what you can\'t do and why.',
+ need:[['have to','have to'],['don\'t have to / need to',/(don't have to|don't need to|do not have to)/i],['can\'t',/(can't|cannot)/i],['but / because',/\b(but|because)\b/i],['I\'m / it\'s (short form)',/\b(i'm|it's|don't|can't)\b/i],['60+ words',null,60]],
+ m:"I get up at six because I have to be at school by seven. After school I usually do my homework, but I don't have to do much on Fridays. I'm able to play volleyball with my friends twice a week. I can't go out in the evening because I need to study for my exams. At the weekend I help my mum and I often go for a walk. It's a busy life, but I enjoy it."},
+{n:'Email to a friend',p:'Write an email (60+ words) to a friend abroad. Talk about your free time and offer to send photos (use Shall I / Could you).',
+ need:[['Dear / Hi',/\b(dear|hi|hello)\b/i],['Shall I…?',/shall i/i],['Could you…?',/could you/i],['might / may',/\b(might|may)\b/i],['Best wishes',/(best wishes|regards)/i],['60+ words',null,60]],
+ m:"Hi Sara,\nThanks for your email! In my free time I play tennis and I like drawing. I might join a photography club soon. Shall I send you some photos of my city? Could you send me some photos of your school, too? I may visit your country next summer, so please write back soon!\nBest wishes,\nAmal"}];
+let ti=0;$('#wt').innerHTML=T.map((t,i)=>`<button data-i="${i}">${t.n}</button>`).join('');
+function wsel(i){ti=i;$$('#wt button').forEach((b,j)=>b.classList.toggle('on',j===i));$('#wp').textContent=T[i].p;$('#wm').innerHTML=T[i].m.replace(/\n/g,'<br>');wchk()}
+function wchk(){const v=$('#wa').value,n=(v.match(/\b[\w']+\b/g)||[]).length;
+ $('#wc').innerHTML=T[ti].need.map(r=>{const ok=r[2]?n>=r[2]:(r[1] instanceof RegExp?r[1].test(v):v.toLowerCase().includes(r[1]));return `<span dir="ltr" class="${ok?'ok':''}">${ok?'✔':'○'} ${r[0]}</span>`}).join('')+`<br><small>عدد الكلمات: ${n}</small>`}
+$('#wt').onclick=e=>{if(e.target.dataset.i)wsel(+e.target.dataset.i)};$('#wa').oninput=wchk;wsel(0);
+$$('summary').forEach(s=>s.innerHTML=s.innerHTML.replace(/^(\d+\))/,'<span class="en">$1</span>'));
+</script>
+</body>
+</html>
